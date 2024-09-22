@@ -16,7 +16,6 @@ import RolePage from './components/Tables/RolePage';
 import MyApp from './components/myApp/MyApp';
 import CustomerPage from './components/Tables/CustomerPage';
 
-// Lazy load PNPRouteApp
 const PNPHome = lazy(() => import('./pages/PNPHome/PNPHome'));
 const PnpCreatePageComponent = lazy(() => import('./pages/PnpCreatePage'));
 import { IntlProvider } from 'react-intl';  // Import IntlProvider
@@ -24,7 +23,6 @@ import enMessages from './locales/en.json';
 import esMessages from './locales/es.json';
 import MyPendingAction from './pages/pnp/MyPendingAction/MyPendingAction';
 import MyPendingActionTest from './pages/pnp/MyPendingAction/DocumentViewPending/DocumentViewPendingTest';
-// import DocumentViewPending from './pages/pnp/MyPendingAction/DocumentViewPending/DocumentViewPending';
 
 const messages = {
   en: enMessages,
@@ -36,7 +34,7 @@ const messages = {
 function App() {
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [locale, setLocale] = useState('en'); // State to manage the locale
+  const [locale, setLocale] = useState('en');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -68,7 +66,7 @@ function App() {
     navigate('/login');
   };
 
-  // Custom component for redirecting logged-in users
+ 
   const RedirectIfLoggedIn = ({ children }) => {
     if (isLoggedIn) {
       return <Navigate to="/dashboard" />;
@@ -112,7 +110,6 @@ function App() {
             } 
           />
           
-          {/* Protected routes */}
           <Route 
             path="/dashboard" 
             element={
@@ -300,17 +297,10 @@ function App() {
           <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
       </div>
-      {/* <FooterComponent /> */}
+     
     </div>
 
-    {/* <div className="p-3 lg:ml-64 z-10 static" style={{ marginTop: "60px" }}>
-
- 
- <button onClick={() => switchLocale('en')}>English</button>
-        <button onClick={() => switchLocale('es')}>Spanish</button>
-
-    </div> */}
-
+   
             
       
 
