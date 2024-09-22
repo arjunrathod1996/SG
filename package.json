@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@heroicons/react": "^2.1.5",
+    "@mui/material": "^6.1.0",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "easy-peasy": "^6.0.5",
+    "lodash": "^4.17.21",
+    "mui-datatables": "^4.3.0",
+    "query-string": "^9.1.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-bootstrap": "^2.10.4",
+    "react-data-table-component": "^7.6.2",
+    "react-datepicker": "^7.3.0",
+    "react-draggable": "^4.4.6",
+    "react-epic-spinners": "^0.5.0",
+    "react-intl": "^6.6.8",
+    "react-loader-spinner": "^6.1.6",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.26.2",
+    "react-select": "^5.8.0",
+    "react-toastify": "^10.0.5",
+    "reactstrap": "^9.2.2"
+  },
+  "devDependencies": {
+    "@types/mui-datatables": "^4.3.12",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "sass": "^1.78.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.4"
+  }
+}
