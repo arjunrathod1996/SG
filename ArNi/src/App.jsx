@@ -25,23 +25,11 @@ import esMessages from "./locales/es.json";
 import MyPendingAction from "./pages/pnp/MyPendingAction/MyPendingAction";
 import MyPendingActionTest from "./pages/pnp/MyPendingAction/DocumentViewPending/DocumentViewPendingTest";
 
+// Arun Arjun Sairam
 const messages = {
   en: enMessages,
   es: esMessages,
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function App() {
   const [user, setUser] = useState(null);
