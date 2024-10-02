@@ -1,4 +1,5 @@
 import React, { lazy, useEffect, useState } from "react";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import LoginPage from "./components/auth/LoginPage";
 import RegistrationPage from "./components/auth/RegistrationPage";
@@ -24,11 +25,23 @@ import esMessages from "./locales/es.json";
 import MyPendingAction from "./pages/pnp/MyPendingAction/MyPendingAction";
 import MyPendingActionTest from "./pages/pnp/MyPendingAction/DocumentViewPending/DocumentViewPendingTest";
 
-// Arjun....
 const messages = {
   en: enMessages,
   es: esMessages,
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -70,10 +83,6 @@ function App() {
       return <Navigate to="/dashboard" />;
     }
     return children;
-  };
-
-  const switchLocale = (newLocale) => {
-    setLocale(newLocale);
   };
 
   return (
